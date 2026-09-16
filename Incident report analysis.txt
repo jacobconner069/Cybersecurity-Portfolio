@@ -1,0 +1,23 @@
+﻿Incident report analysis
+Instructions
+As you continue through this course, you may use this template to record your findings after completing an activity or to take notes on what you've learned about a specific tool or concept. You can also use this chart as a way to practice applying the NIST framework to different situations you encounter.
+Summary
+	The company experienced an attack which caused all network services to suddenly stop responding. The team discovered that the attack used a flood of ICMP packets as a part of a DDoS attack. The team was able to block the incoming ICMP packets, stopping all non-critical network services offline, and restoring critical network services. 
+	Identify
+	The attacker used an ICMP flood attack which affected the entire internal network.
+	Protect
+	Following the attack, the company added a new firewall rule to limit the rate of incoming ICMP packets, and an IDS/IPS system to filter out some ICMP traffic based on suspicious characteristics. 
+	Detect
+	Following the attack, the company implemented source IP address verification on the firewall to check for spoofed IP addresses on incoming ICMP packets, and a network monitoring software to detect abnormal traffic patterns.
+	Respond
+	If a future security event were to occur, the team will isolate affected systems to prevent further network disruption, and attempt to restore any critical systems affected by the event.
+	Recover
+	To recover from another ICMP flooding attack, the firewall can block the flooding ICMP packets, while non-critical network traffic is stopped to reduce overall internal network traffic. Any critical network services can be restored then when the attack has stopped, non-critical network systems can also be restored and brought back online. 
+	
+
+________________
+
+
+
+
+Reflections/Notes:
