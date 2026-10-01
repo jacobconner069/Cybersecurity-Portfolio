@@ -1,0 +1,17 @@
+﻿File permissions in Linux
+Project description
+The research department of the organization needs to update file permissions for files and directories within the projects directory. This will help keep the system secure by ensuring the right people have the right levels of access within the system.
+Check file and directory details
+The ls -la command shows all normal and hidden files and directories along with their permissions. 
+Describe the permissions string
+The first character is either a d or - representing a directory or file respectively. The next three characters represent read [r], write [w], and execute [e] permissions for the user level, the next three characters repeat this format for the group level and the last three characters repeat this format again for the other level.
+Change file permissions
+The organization does not want the other level to have write access to any of the files, Chmod o-w [filename] removes the write permissions for the other level in any file where they may have them now. 
+Change file permissions on a hidden file
+This organization does not want anyone to have write access to the archived project of project_x.txt but the user and group should have read access so the command 
+chmod u-w, g-w, g+r .project_x.txt creates these file permissions.
+Change directory permissions
+The group wants only researcher2 to have execute permissions on the drafts directory so 
+Chmod g-x drafts removes execute permissions for the group
+Summary
+Multiple files and directories had permission levels changed. These were checked initially by using the ls -la command to show all files and directories and their permissions. The chmod command was used on the individual files and directories to change the permissions to comply with the companies wants and needs.
