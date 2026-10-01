@@ -1,0 +1,24 @@
+﻿Apply filters to SQL queries
+Project description
+The organization wants to ensure system safety by filtering their database for any needed updates, and security risks.
+Retrieve after hours failed login attempts
+All unsuccessful login attempts after 18:00 were collected for investigation of a potential security incident that happened after hours. 
+SELECT * FROM log_in_attempts WHERE login_time > ‘18:00‘ AND success = FALSE;
+Retrieve login attempts on specific dates
+Following a suspicious event on 2022-05-09, any login attempts on that day or the day before are queried for investigation. 
+SELECT * FROM log_in_attempts 
+WHERE login_date = ‘2022-05-09‘ OR login_date = ‘2022-05-08‘;
+Retrieve login attempts outside of Mexico
+There is believed to be an issue regarding login attempts outside of Mexico so all login attempts from other countries were collected for investigation
+SELECT * FROM log_in_attempts WHERE NOT country LIKE ‘MEX%‘;
+Retrieve employees in Marketing
+The company wants to update computers for employees in the marketing department in the East building. These employees and their computer information is collected by the query to be updated.
+SELECT * FROM employees WHERE department = ‘Marketing‘ AND office LIKE ‘East%‘;
+Retrieve employees in Finance or Sales
+The machines of employees in finance and sales also need to be updated so these employees are collected for the update.
+SELECT * FROM employees WHERE department = ‘Finance‘ OR department = ‘Sales‘;
+Retrieve all employees not in IT
+Anyone not in the IT department is set for a security update so these employees are selected for the update.
+SELECT * FROM employees WHERE NOT department = ‘Information Technology‘;
+Summary
+SQL queries and filters were applied to the log_in_attempts and employees databases in order to select the appropriate data points for use by the company.
