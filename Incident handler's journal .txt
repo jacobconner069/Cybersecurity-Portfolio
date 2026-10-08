@@ -1,0 +1,24 @@
+﻿Incident handler's journal
+Instructions
+As you continue through this course, you may use this template to record your findings after completing an activity or to take notes on what you've learned about a specific tool or concept. You can also use this journal as a way to log the key takeaways about the different cybersecurity tools or concepts you encounter in this course.
+Date: 
+Record the date of the journal entry.
+	Entry: 1
+	Description
+	Documenting a cybersecurity event
+	Tool(s) used
+	None
+	The 5 W's 
+	Capture the 5 W's of an incident.
+* Who an organization of hackers
+* What ransomware security incident
+* When Tuesday 9:00 am
+* Where At a healthcare company
+* Why Hackers were able to access the companies systems via a fishing attack. The attackers launched ransomware on the companies systems demanding a large sum of money in exchange for a decryption key.
+	
+
+	
+
+	
+
+________________
